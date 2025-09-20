@@ -1,0 +1,31 @@
+/* Global styles */
+body { font-family: Arial, sans-serif; margin: 0; background:#f7f7fb; color:#222; }
+.container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+.card { margin-left:10px ;background:#fff; border:1px solid #e5e7eb; border-radius: 8px; padding: 24px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+
+/* Typography */
+h1 { margin: 0 0 8px; font-size: 24px; }
+h2 { margin: 0 0 16px; font-size: 22px; }
+p { margin: 4px 0 12px; }
+
+a { color:#2563eb; text-decoration:none; margin-right: 12px; }
+a:hover { text-decoration:underline; }
+
+/* Forms */
+form { display: grid; gap: 12px; }
+input[type="text"], input[type="email"], input[type="password"], input[type="datetime-local"], input[type="number"], select {
+  width: 100%; padding: 10px 12px; border:1px solid #d1d5db; border-radius: 6px; box-sizing: border-box;
+}
+.form-submit, button { background:#2563eb; color:#fff; border:none; border-radius:6px; padding:10px 14px; cursor:pointer; }
+.form-submit:hover, button:hover { background:#1d4ed8; }
+
+/* Lists */
+ul { list-style: none; padding-left: 0; }
+ul > ul { border: 1px solid #e5e7eb; border-radius: 6px; padding: 12px; margin-bottom: 12px; background:#fff; }
+
+/* Grid helpers */
+.grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.grid-full { grid-column: 1 / -1; }
+.align-end { align-items: end; }
